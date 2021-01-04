@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load static%}
+{% block title %}Appointment{%endblock%} 
+{% block content%}
+		<!-- Breadcrumbs -->
+		<div class="breadcrumbs overlay">
+			<div class="container">
+				<div class="bread-inner">
+					<div class="row">
+						<div class="col-12">
+							<h2>Appointment</h2>
+							<ul class="bread-list">
+								<li><a href="index.html">Home</a></li>
+								<li><i class="icofont-simple-right"></i></li>
+								<li class="active">Appointment</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        <br/><br/><br/>
+		<!-- End Breadcrumbs -->
+		    <div class="container">	
+                <div class="inner">	 
+		<!-- Start appointment cross check -->
+                <center>
+                    <h1>youare at appointment</h1> <br/><br/>
+                    <h3> Verify you appointment information : </h3> <br/>
+                    <strong> Your name : </strong> {{ msg_name }} <br/>
+                    <strong> Your email : </strong> {{ email }} <br/>
+                    <strong> Your phone number : </strong> {{ phone }} <br/>
+                    <strong> Department you selected : </strong>{{ Department }} <br/>
+                    <strong> Doctor you selected: </strong> {{ Doctor }} <br/>
+                    <strong> Your date of appointment : </strong> {{ date }} <br/>
+                    <strong> message : </strong> {{ message }} <br/>
+                </center>
+								<!--/ End Form -->
+			<section class="contact-us section">	
+                
+                    <div class="contact-info">
+                        <div class="row">
+                            <!-- single-info -->
+                            <div class="col-lg-4 col-12 ">
+                                <div class="single-info">
+                                    <i class="icofont icofont-ui-call"></i>
+                                    <div class="content">
+                                        <h3>+(000) 1234 56789</h3>
+                                        <p>info@company.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/End single-info -->
+                            <!-- single-info -->
+                            <div class="col-lg-4 col-12 ">
+                                <div class="single-info">
+                                    <i class="icofont-google-map"></i>
+                                    <div class="content">
+                                        <h3>2 Fir e Brigade Road</h3>
+                                        <p>Chittagonj, Lakshmipur</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/End single-info -->
+                            <!-- single-info -->
+                            <div class="col-lg-4 col-12 ">
+                                <div class="single-info">
+                                    <i class="icofont icofont-wall-clock"></i>
+                                    <div class="content">
+                                        <h3>Mon - Sat: 8am - 5pm</h3>
+                                        <p>Sunday Closed</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/End single-info -->
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</section>
+		<!--/ End Contact Us -->
+		
+{% endblock %}
+
+
